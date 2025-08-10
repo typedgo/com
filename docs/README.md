@@ -31,4 +31,4 @@ De/serialization methods for request/response bindings, validators, handler list
 
 ## Contribute
 
-For qualifying tools; open one PR for each entry and send to [the repository](https://github.com/typedgo/com) for review. Create new categories as needed. Maintain the writing style of existing entries.
+For qualifying tools; open one PR for each entry and send to [the list](https://github.com/typedgo/the-list) for review. Create new categories as needed. Maintain the writing style of existing entries.
