@@ -2,6 +2,10 @@
 
 Compilation of Go tools to Go type safe.
 
+## Criteria
+
+Any tool that (by the main design goal) aims to improve the coverage of type safety on the use cases commonly found in Go-based codebases by replacing the use of reflection or else has the right to be in this list.
+
 ## Tools
 
 Tools are listed under main categories they are most close to.
@@ -27,4 +31,4 @@ De/serialization methods for request/response bindings, validators, handler list
 
 ## Contribute
 
-Any tool that by the main design goal aims to improve the coverage of type safety on the use cases commonly found in Go-based codebases by replacing the use of reflection or else has the right to be in this list. For qualifying tools; open one PR for each entry and send to [the repository](https://github.com/typedgo/com) for review. Create new categories as needed. Maintain the writing style of existing entries.
+For qualifying tools; open one PR for each entry and send to [the repository](https://github.com/typedgo/com) for review. Create new categories as needed. Maintain the writing style of existing entries.
