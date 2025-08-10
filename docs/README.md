@@ -1,4 +1,6 @@
-# Typed Go: The List
+<img style="width:128px" srcset="/.assets/avatar@2x.png 256w, /.assets/avatar@3x.png 384w" sizes="128w" src="/.assets/avatar@1x.png" alt="TypedGo avatar" />
+
+# The List
 
 Compilation of Go tools to Go type safe.
 
