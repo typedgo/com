@@ -24,23 +24,30 @@ Tools are listed under main categories they are most close to.
 
 ### Configuration
 
-| Tool                                           | Description                                               |
-| ---------------------------------------------- | --------------------------------------------------------- |
-| [Gonfique](https://github.com/ufukty/gonfique) | The most customizable config type generator ever created. |
+| Tool                                           | Description                                                                          |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------ |
+| [Gonfique](https://github.com/ufukty/gonfique) | The most customizable config type generator ever created. <!-- github.com/ufukty --> |
 
 ### Databases
 
-| Tool                                          | Description                              |
-| --------------------------------------------- | ---------------------------------------- |
-| [gqlgen](https://github.com/99designs/gqlgen) | go generate based graphql server library |
-| [sqlc](https://github.com/sqlc-dev/sqlc)      | Generate type-safe code from SQL.        |
+| Tool                                          | Description                                                         |
+| --------------------------------------------- | ------------------------------------------------------------------- |
+| [gqlgen](https://github.com/99designs/gqlgen) | go generate based graphql server library <!-- github.com/ufukty --> |
+| [sqlc](https://github.com/sqlc-dev/sqlc)      | Generate type-safe code from SQL. <!-- github.com/ufukty -->        |
 
 ### Handlers
 
-| Tool                                               | Description                                                                                          |
-| -------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| [Gohandlers](https://github.com/ufukty/gohandlers) | De/serialization methods for request/response bindings, validators, handler listers and client code. |
+| Tool                                               | Description                                                                                                                                                     |
+| -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Gohandlers](https://github.com/ufukty/gohandlers) | Generate code for strongly typed and reflectionless request-response binding, request validation, registering routes and Go clients. <!-- github.com/ufukty --> |
 
 ## Contribute
 
-For qualifying tools; open one PR for each entry and send to [the list](https://github.com/typedgo/the-list) for review. Create new categories as needed. Maintain the writing style of existing entries.
+Open a PR to [the list](https://github.com/typedgo/the-list) for qualifying contributions.
+
+Contribution criteria for new tools:
+
+- Create new categories as needed.
+- Maintain the writing style of existing entries.
+- Sort the table by 1st column.
+- Add your Github profile URL to the last column as comment wrapped within `<!--` and `-->`.
