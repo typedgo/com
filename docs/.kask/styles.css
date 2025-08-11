@@ -12,7 +12,6 @@ html {
   font-style: normal;
   font-size: 1.2em;
 
-  width: min(100%, 700px);
   margin: 0 auto;
 
   scroll-behavior: smooth;
@@ -26,6 +25,7 @@ body {
 ul,
 ol {
   padding-inline-start: 20px;
+  list-style-position: inside;
 }
 
 li {
@@ -65,5 +65,44 @@ p {
     border-radius: 50%;
     overflow: hidden;
     margin: 50px 0 0;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  text-align: left;
+
+  thead {
+    tr {
+      border-bottom: 2px solid #eee;
+    }
+  }
+
+  tbody {
+    display: table-row-group;
+
+    tr:not(:last-child) {
+      border-bottom: 1px solid #eee;
+    }
+  }
+
+  tr {
+    display: table-row;
+
+    th,
+    td {
+      vertical-align: baseline;
+      padding: 10px;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
   }
 }
