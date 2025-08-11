@@ -11,7 +11,7 @@ Compilation of Go tools to Go type safe.
 
 ## Criteria
 
-- Tool's main goal is replacing a reflection involving code with type safe code.
+- Tool's main goal is replacing a reflection involving code with type safe Go code.
 - Tool solve a common-enough problem that the author is not the single one suffers from it.
 - Tool is well maintained and tested.
 - Tool follows semver constraints.
