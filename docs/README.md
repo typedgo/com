@@ -28,6 +28,13 @@ Tools are listed under main categories they are most close to.
 | ---------------------------------------------- | --------------------------------------------------------- |
 | [Gonfique](https://github.com/ufukty/gonfique) | The most customizable config type generator ever created. |
 
+### Databases
+
+| Tool                                          | Description                              |
+| --------------------------------------------- | ---------------------------------------- |
+| [gqlgen](https://github.com/99designs/gqlgen) | go generate based graphql server library |
+| [sqlc](https://github.com/sqlc-dev/sqlc)      | Generate type-safe code from SQL.        |
+
 ### Handlers
 
 | Tool                                               | Description                                                                                          |
