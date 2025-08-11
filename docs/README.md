@@ -24,22 +24,15 @@ Tools are listed under main categories they are most close to.
 
 ### Configuration
 
-#### Gonfique
-
-The most customizable config type generator ever created.
-
-- [Repository](https://github.com/ufukty/gonfique)
-- [Playground](https://gonfique.pages.dev)
+| Tool                                           | Description                                               |
+| ---------------------------------------------- | --------------------------------------------------------- |
+| [Gonfique](https://github.com/ufukty/gonfique) | The most customizable config type generator ever created. |
 
 ### Handlers
 
-#### Gohandlers
-
-De/serialization methods for request/response bindings, validators, handler listers and client code.
-
-- [Repository](https://github.com/ufukty/gohandlers)
-- [Docs](https://gohandlers.pages.dev)
-- [Demo project](https://github.com/ufukty/gohandlers-petstore)
+| Tool                                               | Description                                                                                          |
+| -------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| [Gohandlers](https://github.com/ufukty/gohandlers) | De/serialization methods for request/response bindings, validators, handler listers and client code. |
 
 ## Contribute
 
