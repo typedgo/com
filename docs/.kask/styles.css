@@ -106,3 +106,15 @@ table {
     }
   }
 }
+
+@media screen and (prefers-color-scheme: dark) {
+  .only-light-mode {
+    display: none;
+  }
+}
+
+@media screen and (prefers-color-scheme: light) {
+  .only-dark-mode {
+    display: none;
+  }
+}

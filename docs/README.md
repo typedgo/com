@@ -1,4 +1,5 @@
-<img style="width:128px" srcset="/.assets/avatar@2x.png 256w, /.assets/avatar@3x.png 384w" sizes="128w" src="/.assets/avatar@1x.png" alt="TypedGo avatar" />
+<img class="only-light-mode" style="width:128px" srcset="/.assets/avatar@2x.png 256w, /.assets/avatar@3x.png 384w" sizes="128w" src="/.assets/avatar@1x.png" alt="TypedGo avatar" />
+<img class="only-dark-mode" style="width:128px" srcset="/.assets/avatar-dark@2x.png 256w, /.assets/avatar-dark@3x.png 384w" sizes="128w" src="/.assets/avatar-dark@1x.png" alt="TypedGo avatar" />
 
 # The List
 
@@ -26,7 +27,7 @@ Tools are listed under main categories they are most close to.
 
 | Tool                                           | Description                                                                          |
 | ---------------------------------------------- | ------------------------------------------------------------------------------------ |
-| [Gonfique](https://github.com/ufukty/gonfique) | The most customizable config type generator ever created. <!-- github.com/ufukty --> |
+| [Gonfique](https://github.com/ufukty/gonfique) | The most customizable config type generator ever created. | Accessing config properties through hardcoded textual map keys. <!-- github.com/ufukty --> |
 
 ### Databases
 
