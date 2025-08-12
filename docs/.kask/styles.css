@@ -3,7 +3,7 @@
 }
 
 html {
-  color: light-dark(#444, #ddd);
+  color: light-dark(#444, #bbb);
   background-color: light-dark(#fff, #000);
 
   font-family: "Open Sans", sans-serif;
@@ -76,7 +76,7 @@ table {
 
   thead {
     tr {
-      border-bottom: 2px solid #eee;
+      border-bottom: 2px solid light-dark(#eee, #222);
     }
   }
 
@@ -84,7 +84,7 @@ table {
     display: table-row-group;
 
     tr:not(:last-child) {
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid light-dark(#eee, #222);
     }
   }
 
