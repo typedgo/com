@@ -23,24 +23,24 @@ Compilation of Go tools to Go type safe.
 
 Tools are listed under main categories they are most close to.
 
+### APIs
+
+| Tool                                               | Description                                                                                                                                                    | Replaced non type-safe practices                                       |
+| -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| [Gohandlers](https://github.com/ufukty/gohandlers) | Generate code for strongly typed and reflectionless request-response binding, request validation, registering routes and Go clients.<!-- github.com/ufukty --> | Reflection-based struct field iteration for request/response bindings. |
+| [gqlgen](https://github.com/99designs/gqlgen)      | go generate based graphql server library <!-- github.com/ufukty -->                                                                                            | v                                                                      |
+
 ### Configuration
 
-| Tool                                           | Description                                                                          |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------ |
+| Tool                                           | Description                                               | Replaced non type-safe practices                                                           |
+| ---------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
 | [Gonfique](https://github.com/ufukty/gonfique) | The most customizable config type generator ever created. | Accessing config properties through hardcoded textual map keys. <!-- github.com/ufukty --> |
 
 ### Databases
 
-| Tool                                          | Description                                                         |
-| --------------------------------------------- | ------------------------------------------------------------------- |
-| [gqlgen](https://github.com/99designs/gqlgen) | go generate based graphql server library <!-- github.com/ufukty --> |
-| [sqlc](https://github.com/sqlc-dev/sqlc)      | Generate type-safe code from SQL. <!-- github.com/ufukty -->        |
-
-### Handlers
-
-| Tool                                               | Description                                                                                                                                                     |
-| -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Gohandlers](https://github.com/ufukty/gohandlers) | Generate code for strongly typed and reflectionless request-response binding, request validation, registering routes and Go clients. <!-- github.com/ufukty --> |
+| Tool                                     | Description                       | Replaced non type-safe practices                                                                         |
+| ---------------------------------------- | --------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| [sqlc](https://github.com/sqlc-dev/sqlc) | Generate type-safe code from SQL. | Reflection-based database row scanning (`sql.Rows.Scan` with generic mappers).<!-- github.com/ufukty --> |
 
 ## Contribute
 
