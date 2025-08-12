@@ -25,22 +25,31 @@ Tools are listed under main categories they are most close to.
 
 ### APIs
 
-| Tool                                               | Description                                                                                                                                                    | Replaced non type-safe practices                                       |
-| -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| [Gohandlers](https://github.com/ufukty/gohandlers) | Generate code for strongly typed and reflectionless request-response binding, request validation, registering routes and Go clients.<!-- github.com/ufukty --> | Reflection-based struct field iteration for request/response bindings. |
-| [gqlgen](https://github.com/99designs/gqlgen)      | go generate based graphql server library <!-- github.com/ufukty -->                                                                                            | v                                                                      |
+| Tool                                               | Description                                                                                                                          | Replaced type-unsafe practices                                                                    |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- |
+| [Gohandlers](https://github.com/ufukty/gohandlers) | Generate code for strongly typed and reflectionless request-response binding, request validation, registering routes and Go clients. | Reflection-based struct field iteration for request/response bindings. <!-- github.com/ufukty --> |
 
 ### Configuration
 
-| Tool                                           | Description                                               | Replaced non type-safe practices                                                           |
+| Tool                                           | Description                                               | Replaced type-unsafe practices                                                             |
 | ---------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
 | [Gonfique](https://github.com/ufukty/gonfique) | The most customizable config type generator ever created. | Accessing config properties through hardcoded textual map keys. <!-- github.com/ufukty --> |
 
 ### Databases
 
-| Tool                                     | Description                       | Replaced non type-safe practices                                                                         |
-| ---------------------------------------- | --------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| [sqlc](https://github.com/sqlc-dev/sqlc) | Generate type-safe code from SQL. | Reflection-based database row scanning (`sql.Rows.Scan` with generic mappers).<!-- github.com/ufukty --> |
+| Tool                                     | Description                       | Replaced type-unsafe practices                                                                            |
+| ---------------------------------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| [sqlc](https://github.com/sqlc-dev/sqlc) | Generate type-safe code from SQL. | Reflection-based database row scanning (`sql.Rows.Scan` with generic mappers). <!-- github.com/ufukty --> |
+
+### Enums
+
+| Tool                                                           | Description                                   | Replaced type-unsafe practices                                                    |
+| -------------------------------------------------------------- | --------------------------------------------- | --------------------------------------------------------------------------------- |
+| [stringer](https://pkg.go.dev/golang.org/x/tools/cmd/stringer) | Tool to generate String methods for Go enums. | `fmt`-based runtime string conversions via reflection. <!-- github.com/ufukty --> |
+
+## Review list
+
+See [review list](./review.md) for tools queued for review.
 
 ## Contribute
 
