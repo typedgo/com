@@ -2,9 +2,16 @@
   color-scheme: light dark;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 html {
   color: light-dark(#444, #bbb);
-  background-color: light-dark(#fff, #000);
+
+  background-color: light-dark(#ffffff, #000);
 
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -18,7 +25,7 @@ html {
 }
 
 body {
-  padding: 2em 2em 60vh;
+  padding: max(20px, 5vw) max(20px, 5vw) 60vh;
   position: relative;
 }
 
@@ -37,71 +44,87 @@ img {
   border-radius: 8px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+:is(h1, h2, h3, h4, h5, h6) {
   color: light-dark(#000, #eee);
-  margin-top: 2em;
   line-height: 2em;
-}
 
-h3 {
-  position: sticky;
-  top: 0;
-  background-color: light-dark(#fff, #000);
-  z-index: 5;
+  &:not(:first-child) {
+    margin-top: 1em;
+  }
 }
 
 p {
   line-height: 2em;
 }
 
-#profile-shot {
-  & > img {
-    width: 230px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 50px 0 0;
-  }
-}
-
 table {
-  width: 100%;
-  border-collapse: collapse;
-
   text-align: left;
-
   thead {
-    tr {
-      border-bottom: 2px solid light-dark(#eee, #222);
-    }
+    display: none;
   }
 
-  tbody {
-    display: table-row-group;
+  @media screen and (width<=800px) {
+    display: block;
+    margin-top: 20px;
 
-    tr:not(:last-child) {
-      border-bottom: 1px solid light-dark(#eee, #222);
-    }
-  }
+    tbody {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
 
-  tr {
-    display: table-row;
+      tr {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
 
-    th,
-    td {
-      vertical-align: baseline;
-      padding: 10px;
+        padding: 15px 20px;
 
-      &:first-child {
-        padding-left: 0;
+        background-color: light-dark(#f4f4f4, #222);
+        border-radius: 8px;
+
+        td {
+          &:nth-child(1) {
+            font-weight: bold;
+          }
+
+          &:nth-child(3) {
+            color: light-dark(#6b6b6b, #949494);
+          }
+        }
       }
+    }
+  }
 
-      &:last-child {
-        padding-right: 0;
+  @media screen and (800px<width) {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+
+    tbody {
+      display: table-row-group;
+
+      tr:not(:last-child) {
+        border-bottom: 1px solid light-dark(#eee, #222);
+      }
+    }
+
+    tr {
+      display: table-row;
+
+      th,
+      td {
+        vertical-align: baseline;
+        padding: 10px;
+        width: 38%;
+
+        &:first-child {
+          padding-left: 0;
+          width: 24%;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
       }
     }
   }
