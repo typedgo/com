@@ -59,13 +59,14 @@ p {
 
 table {
   text-align: left;
-  thead {
-    display: none;
-  }
 
   @media screen and (width<=800px) {
     display: block;
     margin-top: 20px;
+
+    thead {
+      display: none;
+    }
 
     tbody {
       display: flex;
@@ -88,7 +89,14 @@ table {
           }
 
           &:nth-child(3) {
-            color: light-dark(#6b6b6b, #949494);
+            color: light-dark(#388f2b, #5dc54d);
+
+            &:before {
+              display: block;
+              content: "REPLACED TYPE-UNSAFE PRACTICE:";
+              font-size: 0.5em;
+              font-weight: bold;
+            }
           }
         }
       }
@@ -99,6 +107,10 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 50px;
+
+    thead tr {
+      border-bottom: 1px solid light-dark(#eee, #222);
+    }
 
     tbody {
       display: table-row-group;
@@ -123,6 +135,7 @@ table {
         }
 
         &:last-child {
+          color: light-dark(#388f2b, #66be5a);
           padding-right: 0;
         }
       }
